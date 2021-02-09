@@ -48,11 +48,11 @@ form.addEventListener('submit', (e) => {
         method: "POST", 
          headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'mode': 'no-cors'
+            'Content-Type': 'application/json'
          },
          
-         body: JSON.stringify(items)
+         body: JSON.stringify(items),
+         mode: 'no-cors'
 
      })
         .then(res => res.json())
